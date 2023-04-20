@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'standard',
-    'eslint-config-standard-with-typescript'
+    'eslint-config-standard-with-typescript',
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   overrides: [],
@@ -15,8 +16,10 @@ module.exports = {
     project: './tsconfig.json'
   },
   plugins:[
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'prettier'
   ],
   rules: {
+    'prettier/prettier': 'error'
   }
 }
