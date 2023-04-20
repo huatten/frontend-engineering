@@ -1,0 +1,30 @@
+{
+  "name": "frontend-engineering",
+  "version": "1.0.0",
+  "description": "How to Build an Engineering Frontend Library",
+  "main": "index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrTenger/frontend-engineering.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrTenger/frontend-engineering/issues"
+  },
+  "homepage": "https://github.com/MrTenger/frontend-engineering#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
